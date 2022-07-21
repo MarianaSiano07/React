@@ -1,12 +1,18 @@
-import './index.css' //Importe do CSS
+//Importe do CSS
+import './index.css'
+
+//Importe de React
 import ReactDOM from 'react-dom'
 import React from 'react'
 
-import Primeiro from './components/basicos/Primeiro' //Componente
+//Importe Componentes
+import Primeiro from './components/basicos/Primeiro'
+import ComParametro from './components/basicos/ComParametro'
 
 ReactDOM.render(
     <div>
-        <Primeiro>image.png</Primeiro>
+        <Primeiro></Primeiro>
+        <ComParametro titulo="Situação do Aluno" aluno="Pedro Silva" nota={9.3} />
     </div>, 
     document.getElementById('root')
 )
